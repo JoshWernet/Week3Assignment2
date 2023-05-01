@@ -8,7 +8,9 @@
 
 #import the math package
 import math
+import timeit
 
+start = timeit.default_timer()
 #Initialize the average wind speed, operating efficiency, and the radius of the blade
 run = True
 avgWindSpeed = 0
@@ -44,4 +46,6 @@ while run == True:
     else:
         print("invalid")
 
-        
+stop = timeit.default_timer()
+
+print('Time: ', stop - start)
