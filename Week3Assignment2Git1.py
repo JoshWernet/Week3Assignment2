@@ -31,9 +31,6 @@ while run == True:
     #Compute actual power by taking percent of maximum power
     powerActual = powerMaximum * (operatingEfficiency/100)
 
-    #Delete in final version of the code
-    print("The blade area is: ", area)
-
     #Print the actual and maximum power of the wind turbine
     print("The actual turbine power is: ", powerActual)
     print("The Maximum power is: ", powerMaximum)
