@@ -36,12 +36,13 @@ while run == True:
     print("The Maximum power is: ", powerMaximum)
 
     #Input recalculation choice
-    runChoice = input("Would you like to make another computation(y/n)?:")
-    if runChoice == 'y':
-        continue
-    elif runChoice == 'n':
-        run = False
-    else:
-        print("invalid")
+    while run == True:
+        runChoice = input("Would you like to make another computation(y/n)?:")
+        if runChoice == 'y':
+            continue
+        elif runChoice == 'n':
+            run = False
+        else:
+            print("invalid")
 
         
